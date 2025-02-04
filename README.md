@@ -1,4 +1,9 @@
+# Yoga14sACH2021_Hackintosh
+
+Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你如何在yoga14s ACH2021上安装黑苹果）
+
 # 电脑配置
+
 |   规格   | 详细信息                                               |
 | :------: | ------------------------------------------------------ |
 | 电脑配置 | Yoga14sACH2021                                         |
@@ -42,15 +47,24 @@
 - [EFI各文件介绍](https://yuexiang.fun/1231.html)
 
 # 收尾工作
+
 ## 黑成白苹果
+
 ### 目标
+
 我们通过使用bootcamp达成不通过使用oc界面在win与mac之间进行切换。
+
 ### 安装
+
 Bootcamp可以在google直接搜索下载，注意不同的系统对应不同的版本；下载完成后将文件放在任意你想放的位置，双击setup.exe进行安装；安装完成后运行。
+
 ### 切换
+
 Win切换Mac：在任务栏右下角找到图标，右击“切换到MacOS”即可。
 Mac切换Win：低版本mac可以在左上角找到系统偏好设置--启动磁盘，高版本mac在设置-通用-启动磁盘，在进入启动磁盘后选择Win所在盘点击重新启动即可（需要输入密码）。
+
 ### 关闭OC引导
+
 在Win或者Mac中打开config.conf文件（打开方式可参照问题2），在Misc中取消勾选Show Picker，然后在UEFI--UEFI驱动中取消勾选OpenCanopy.efi，保存即可。
 
 > bootcamp安装过程中常见问题：
@@ -60,28 +74,32 @@ Mac切换Win：低版本mac可以在左上角找到系统偏好设置--启动磁
 > 注意：Bootcamp的最高适配系统为Win10
 
 ## [使用部分联想管家功能](https://github.com/daliansky/XiaoXinPro-13-hackintosh/issues/139#issue-970836873)
+
 ### 使用方式
+
 - 下载 [ECEnabler.kext](https://github.com/1Revenger1/ECEnabler/releases)
-    - 得到 `ECEnabler.kext` 放入 `OC/Kexts` 并在 `config.plist` 中引入。
+  - 得到 `ECEnabler.kext` 放入 `OC/Kexts` 并在 `config.plist` 中引入。
 - 下载 `YogaSMC-App-Release.dmg`
-    - 双击选择安装， 然后再双击安装 `YogaSMCPane.prefPane` 控制面板，安装后在 `系统偏好设置` 最后一行找到。
+  - 双击选择安装， 然后再双击安装 `YogaSMCPane.prefPane` 控制面板，安装后在 `系统偏好设置` 最后一行找到。
 - 下载 [YogaSMC-Release.zip](https://github.com/zhen-zen/YogaSMC/releases)
-    - 解压 得到 `YogaSMC.kext` 放入 `OC/Kexts` 并在 `config.plist` 中引入。
+  - 解压 得到 `YogaSMC.kext` 放入 `OC/Kexts` 并在 `config.plist` 中引入。
 - 在 上面的 `YogaSMC-Release.zip` 中
-    - 解压后同时会得到 `SSDTSample/*.dsl` ,
-    - 使用 [MaciASL.app](https://github.com/acidanthera/MaciASL/releases) 分别打开 `SSDT-ECRW.dsl`、`SSDT-RCSM.dsl` ，
-    - 不做任何修改，在 `文件`，选择 `另存为`，`文件格式`选择为：`ACPI xxx`,
-    - 分别得到 `SSDT-ECRW.aml`、`SSDT-RCSM.aml` ，
-    - 注意后缀是`.aml`，
-    - 将它们放入 `OC/ACPI` 并在 `config.plist` 中引入。
+  - 解压后同时会得到 `SSDTSample/*.dsl` ,
+  - 使用 [MaciASL.app](https://github.com/acidanthera/MaciASL/releases) 分别打开 `SSDT-ECRW.dsl`、`SSDT-RCSM.dsl` ，
+  - 不做任何修改，在 `文件`，选择 `另存为`，`文件格式`选择为：`ACPI xxx`,
+  - 分别得到 `SSDT-ECRW.aml`、`SSDT-RCSM.aml` ，
+  - 注意后缀是`.aml`，
+  - 将它们放入 `OC/ACPI` 并在 `config.plist` 中引入。
 - 重启生效。
+
 ### 生效功能
-|     功能     |              是否生效              |
-| :--------: | :----------------------------: |
+
+|        功能        |                   是否生效                    |
+| :----------------: | :-------------------------------------------: |
 | Fn功能键开启与关闭 |      ✅( 键盘上第一行的功能键几乎能工作 )      |
 |  键盘灯启动与关闭  | ✅(Fn+Space可以进行切换，Pane中不可以进行切换) |
-|   性能模式切换   |     ✅(Fn+Q不行，Pane中可以进行切换)      |
-|  CapsLk 锁  |               ❎                |
+|    性能模式切换    |        ✅(Fn+Q不行，Pane中可以进行切换)        |
+|     CapsLk 锁      |                       ❎                       |
 
 # 建议及声明
 
