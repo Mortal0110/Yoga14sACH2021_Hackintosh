@@ -36,11 +36,13 @@ Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你
 
 > ✅仅表示在正常使用环境下经过测试可以正常使用
 
-
-
 # 镜像制作以及安装工作
 
 该项内容可以在网络中搜索进行学习（后续考虑补充）
+
+## 镜像下载以及U盘制作
+
+转载自老吴黑苹果 [网盘链接(内有MacOSVentura镜像以及U盘制作教程)](https://www.alipan.com/s/Ln643E4FQPu)
 
 ## EFI配置说明
 
@@ -56,20 +58,20 @@ Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你
 
 ### 安装
 
-Bootcamp可以在google直接搜索下载，注意不同的系统对应不同的版本；下载完成后将文件放在任意你想放的位置，双击setup.exe进行安装；安装完成后运行。
+Bootcamp可以在google直接搜索下载，注意不同的系统对应不同的版本；下载完成后将文件放在任意你想放的位置，双击`setup.exe`进行安装；安装完成后运行。
 
 ### 切换
 
-Win切换Mac：在任务栏右下角找到图标，右击“切换到MacOS”即可。
-Mac切换Win：低版本mac可以在左上角找到系统偏好设置--启动磁盘，高版本mac在设置-通用-启动磁盘，在进入启动磁盘后选择Win所在盘点击重新启动即可（需要输入密码）。
+Win切换Mac：在任务栏右下角找到图标，右击`切换到MacOS`即可。
+Mac切换Win：低版本mac可以在左上角找到`系统偏好设置--启动磁盘`，高版本mac在`设置-通用-启动磁盘`，在进入启动磁盘后选择Win所在盘点击`重新启动`即可（需要输入密码）。
 
 ### 关闭OC引导
 
-在Win或者Mac中打开config.conf文件（打开方式可参照问题2），在Misc中取消勾选Show Picker，然后在UEFI--UEFI驱动中取消勾选OpenCanopy.efi，保存即可。
+在Win或者Mac中打开`config.plist`文件（打开方式可参照问题2），在`Misc`中取消勾选`Show Picker`，然后在`UEFI--UEFI驱动`中取消勾选`OpenCanopy.efi`，保存即可。
 
 > bootcamp安装过程中常见问题：
-> 1、运行setup.exe提示“版本不适用”：进入“driver--apple--bootcamp.msi”运行即可（如果提示仍然要从setup.exe进行安装请参照2）
-> 2、运行setup.exe提示“版本不适用”：在Win端用OCAT打开"efi--oc--config.conf"或者在Mac端用opencare打开相同文件，找到左侧PI、勾选spoofvendor、然后找到UpdateSMBIOSMode、选择 creat、然后找到Kernel、点击选项、然后把CustomSMBIOSGuid 去掉勾选、保存、然后重新安装bootcamp，此时如果运行setup.exe提示缺少winpedrive之类的文件夹，在bootcamp同级文件夹下创建空文件夹即可。
+> 1、运行`setup.exe`提示“版本不适用”：进入`driver--apple--bootcamp.msi`运行即可（如果提示仍然要从`setup.exe`进行安装请参照2）
+> 2、运行`setup.exe`提示“版本不适用”：在Win端用OCAT打开`efi--oc--config.conf`或者在Mac端用opencare打开相同文件，找到左侧`PI`、勾选`spoofvendor`、然后找到`UpdateSMBIOSMode`、选择 `creat`、然后找到`Kernel`、点击`选项`、然后把`CustomSMBIOSGuid `去掉勾选、保存、然后重新安装bootcamp，此时如果运行`setup.exe`提示缺少winpedrive之类的文件夹，在bootcamp同级文件夹下创建空文件夹即可。
 >
 > 注意：Bootcamp的最高适配系统为Win10
 
@@ -94,12 +96,16 @@ Mac切换Win：低版本mac可以在左上角找到系统偏好设置--启动磁
 
 ### 生效功能
 
-|        功能        |                   是否生效                    |
-| :----------------: | :-------------------------------------------: |
-| Fn功能键开启与关闭 |      ✅( 键盘上第一行的功能键几乎能工作 )      |
-|  键盘灯启动与关闭  | ✅(Fn+Space可以进行切换，Pane中不可以进行切换) |
-|    性能模式切换    |        ✅(Fn+Q不行，Pane中可以进行切换)        |
-|     CapsLk 锁      |                       ❎                       |
+|        功能        |                    是否生效                     |
+| :----------------: | :---------------------------------------------: |
+| Fn功能键开启与关闭 |       ✅( 键盘上第一行的功能键几乎能工作 )       |
+|  键盘灯启动与关闭  | ✅(`Fn+Space`可以进行切换，Pane中不可以进行切换) |
+|    性能模式切换    |        ✅(`Fn+Q`不行，Pane中可以进行切换)        |
+|     CapsLk 锁      |          ❎(Mac中CapsLk用于切换中英文)           |
+
+### 副作用
+
+- 可能会导致`系统设置-键盘-键盘快捷键-修饰键`不能进行自定义
 
 # 建议及声明
 
