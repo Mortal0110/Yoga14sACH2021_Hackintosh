@@ -1,1 +1,27 @@
+name: Release
 
+on:
+  push:
+    tags:
+      - 'v*'  # 触发以 v 开头的标签
+    paths:
+      - 'EFI/**'  # 只有 EFI 文件夹下的文件有变化时才触发 workflow
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Create ZIP archive for EFI folder
+        run: |
+          zip -r EFI.zip EFI/  # 将压缩文件命名为 EFI.zip
+
+      - name: Upload release asset
+        uses: softprops/action-gh-release@v1
+        with:
+          files: EFI.zip  # 上传生成的 EFI.zip 文件
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
