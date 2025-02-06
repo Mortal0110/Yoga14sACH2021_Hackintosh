@@ -25,7 +25,7 @@ jobs:
         run: |
           VERSION=$(date +'%Y%m%d')  # 使用当前日期作为版本号，格式为 yyyyMMdd
           git tag $VERSION  # 创建标签
-          git push origin $VERSION  # 推送标签到远程
+          git push origin $VERSION  # 推送标签到远程仓库
 
       - name: Create ZIP archive for EFI folder
         run: |
@@ -34,6 +34,7 @@ jobs:
       - name: Upload release asset
         uses: softprops/action-gh-release@v1
         with:
+          tag_name: ${{ github.ref }}  # 使用当前的 git ref（即创建的 tag）
           files: EFI.zip  # 上传压缩文件到 GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
