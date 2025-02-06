@@ -21,6 +21,14 @@ jobs:
           git config user.name "Your Name"
           git config user.email "youremail@example.com"
         
+      - name: Check and delete existing tag if it exists
+        run: |
+          VERSION=$(date +'%Y%m%d')  # 使用当前日期作为版本号，格式为 yyyyMMdd
+          # 删除本地已有的 tag
+          git tag -d $VERSION || echo "Tag $VERSION does not exist locally"
+          # 删除远程已有的 tag
+          git push --delete origin $VERSION || echo "Tag $VERSION does not exist remotely"
+        
       - name: Create a tag based on current date
         run: |
           VERSION=$(date +'%Y%m%d')  # 使用当前日期作为版本号，格式为 yyyyMMdd
