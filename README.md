@@ -90,9 +90,9 @@ Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你
 
 3、在主界面选择`安装macOS`，选择刚刚格式化的磁盘安装，之后一直点击`下一步/同意`，如果再次进去OC界面需要选择`MacOS`(不是之前1中选择的内容)，之后等待10-20分钟安装完成后进去MacOS激活界面，按照正常流程激活即可。
 
-### 添加UEFI引导项
+### 添加UEFI引导项{#first}
 
-由于我们此时是从U盘引导进去Mac系统，我们还需要重新在电脑中建立引导，请参照[`方案2 恢复镜像安装 - 添加UEFI引导项`](#添加UEFI引导项-2)。 
+由于我们此时是从U盘引导进去Mac系统，我们还需要重新在电脑中建立引导，请参照[`方案2 恢复镜像安装 - 添加UEFI引导项`](#second)。 
 
 ### 替换EFI文件
 
@@ -113,7 +113,7 @@ Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你
 
 > 如果提示需要格式化或者无法拷贝文件，则需要把该分区格式化为FAT32文件系统并指派一个驱动器号。
 
-### 添加UEFI引导项
+### 添加UEFI引导项{#second}
 
 打开`DiskGenius`(如果熟悉操作也可以使用`EasyUEFI`或者`Bootice`，这里我们介绍`DiskGenius`)，在菜单栏选择`工具-制作UEFI引导项`，在弹出的窗口中选择`添加`，从ESP分区中找到`EFI-Boot-BOOTx64.efi`选中这个文件添加，并在右边的小窗口下方选择上移到最优先项，最后保存设置。
 
@@ -226,7 +226,7 @@ Mac切换Win：低版本mac可以在左上角找到`系统偏好设置--启动�
 
 # 鸣谢
 
-[@黑成白苹果](https://m.tb.cn/h.TLeFr0V?tk=3Teieg6xuXt MF937)
+[@黑成白苹果](https://m.tb.cn/h.TLeFr0V?tk=3Teieg6xuXt)
 
 # 建议及声明
 
