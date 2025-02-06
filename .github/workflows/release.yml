@@ -42,7 +42,8 @@ jobs:
       - name: Upload release asset
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: $(date +'%Y%m%d') 
+	  VERSION=$(date +'%Y%m%d') 
+          tag_name: $VERSION
           files: EFI.zip  # 上传压缩文件到 GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
