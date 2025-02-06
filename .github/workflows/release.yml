@@ -2,8 +2,11 @@ name: Create Release
 
 on:
   push:
+    tags:
+      - 'v*'
     paths:
-      - 'EFI/**'  # 监听 EFI 文件夹的变化
+      - 'EFI/**'  # 仅当 EFI 文件夹内有变更时才触发
+
 
 jobs:
   release:
