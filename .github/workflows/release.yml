@@ -30,10 +30,12 @@ jobs:
           git push --delete origin $VERSION || echo "Tag $VERSION does not exist remotely"
         
       - name: Create a tag based on current date
+        id: create_tag
         run: |
           VERSION=$(date +'%Y%m%d')  # 使用当前日期作为版本号，格式为 yyyyMMdd
           git tag $VERSION  # 创建标签
           git push origin $VERSION  # 推送标签到远程仓库
+          echo "::set-output name=VERSION::$VERSION"  # 设置输出变量
 
       - name: Create ZIP archive for EFI folder
         run: |
@@ -41,10 +43,8 @@ jobs:
 
       - name: Upload release asset
         uses: softprops/action-gh-release@v1
-	run: |
-          VERSION=$(date +'%Y%m%d') 
         with:
-          tag_name: $VERSION
+          tag_name: ${{ steps.create_tag.outputs.VERSION }}  # 使用创建的 VERSION 变量作为 tag_name
           files: EFI.zip  # 上传压缩文件到 GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
