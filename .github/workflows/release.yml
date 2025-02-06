@@ -42,7 +42,7 @@ jobs:
       - name: Upload release asset
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ github.ref }}  # 使用当前的 git ref（即创建的 tag）
+          tag_name: ${{ steps.create_tag.outputs.VERSION }}  # 使用创建的 VERSION 变量作为 tag_name
           files: EFI.zip  # 上传压缩文件到 GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
