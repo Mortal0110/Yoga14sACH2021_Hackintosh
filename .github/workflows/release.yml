@@ -34,4 +34,4 @@ jobs:
         with:
           files: EFI.zip  # 上传压缩文件到 GitHub Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
