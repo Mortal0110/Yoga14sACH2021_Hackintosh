@@ -1,9 +1,9 @@
-name: Create Release
+name: Create Release on Tag
 
 on:
   push:
-    paths:
-      - 'EFI/**'  # 监听 EFI 文件夹的变化
+    tags:
+      - 'v*.0'  # 监听符合 x.0 格式的标签
 
 jobs:
   release:
@@ -12,17 +12,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Set up Git
-        run: |
-          git config user.name "Your Name"
-          git config user.email "youremail@example.com"
-        
-      - name: Create a tag based on current date
-        run: |
-          VERSION=$(date +'%Y%m%d')  # 使用当前日期作为版本号，格式为 yyyyMMdd
-          git tag $VERSION  # 创建标签
-          git push origin $VERSION  # 推送标签到远程
 
       - name: Create ZIP archive for EFI folder
         run: |
