@@ -1,4 +1,16 @@
-# Yoga14sACH2021_Hackintosh
+<h1 align="center">Yoga14sACH2021_Hackintosh</h1>
+
+  <p align="center">
+    <a href="https://github.com/mortal0110/Yoga14sACH2021_Hackintosh/graphs/contributors">
+      <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/mortal0110/Yoga14sACH2021_Hackintosh" />
+    </a>
+    <a href="https://github.com/mortal0110/Yoga14sACH2021_Hackintosh/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/mortal0110/Yoga14sACH2021_Hackintosh?color=0088ff" />
+    </a>
+    <a href="https://github.com/mortal0110/Yoga14sACH2021_Hackintosh/pulls">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/mortal0110/Yoga14sACH2021_Hackintosh?color=0088ff" />
+    </a>
+  </p>
 
 Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你如何在yoga14s ACH2021上安装黑苹果）
 
