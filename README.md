@@ -29,8 +29,9 @@ Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你
 | 电源           | ✅                                 | iCloud   | ✅        |
 | 蓝牙           | ✅                                 | 接力     | ✅        |
 | 显示器亮度调节 | ✅                                 | 隔空投送 | ❌        |
-| 无限网卡       | ✅                                 | 台前调度 | ✅        |
-| 触摸板         | ✅                                 | 屏幕镜像 | ❌        |
+| 刷新率         | ✅(90Hz)                           | 台前调度 | ✅        |
+| 无限网卡       | ✅                                 | 屏幕镜像 | ❌        |
+| 触摸板         | ✅                                 |          |          |
 | USB接口        | ✅                                 |          |          |
 | 外放           | ✅                                 |          |          |
 | 摄像头         | ✅                                 |          |          |
@@ -90,6 +91,7 @@ Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你
 |  键盘灯启动与关闭  | ✅(`Fn+Space`可以进行切换，Pane中不可以进行切换) |
 |    性能模式切换    |        ✅(`Fn+Q`不行，Pane中可以进行切换)        |
 |     CapsLk 锁      |      ✅(单击用于切换键盘，长按可以锁定大写)      |
+|     刷新率切换     |          ❌(Fn+R不行，在MacOS默认90Hz)           |
 
 ### 副作用
 
