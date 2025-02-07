@@ -33,6 +33,7 @@ Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你
 | 触摸板         | ✅                                 | 屏幕镜像 | ❌        |
 | USB接口        | ✅                                 |          |          |
 | 外放           | ✅                                 |          |          |
+| 摄像头         | ✅                                 |          |          |
 | 麦克风         | ✅                                 |          |          |
 | 睡眠           | ✅(关盖睡眠需要时间以及唤醒很迅速) |          |          |
 
