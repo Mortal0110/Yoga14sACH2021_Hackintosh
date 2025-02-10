@@ -17,7 +17,7 @@ Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你
 
 > README文件仅为汇总，详细内容请在wiki中查看或者点击标题跳转对应wiki。
 
-# [电脑配置](https://github.com/Mortal0110/Yoga14sACH2021_Hackintosh/wiki/电脑配置)
+# [电脑配置](https://github.com/TychoSuen/Yoga14sACH2021_Hackintosh/wiki/电脑配置)
 
 |   规格   | 详细信息                                               |
 | :------: | ------------------------------------------------------ |
@@ -33,7 +33,7 @@ Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你
 |   网卡   | Intel Wi-Fi 6 AX200 1600MHz #2                         |
 | 官方BIOS | GZCN37WW                                               |
 
-# [完善度](https://github.com/Mortal0110/Yoga14sACH2021_Hackintosh/wiki/完善度及兼容性#完善度)
+# [完善度](https://github.com/TychoSuen/Yoga14sACH2021_Hackintosh/wiki/完善度及兼容性#完善度)
 
 测试环境 MacOS Ventura
 
@@ -53,7 +53,7 @@ Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你
 
 > ✅仅表示在正常使用环境下经过测试可以正常使用
 
-# [Geekbench 6比较](https://github.com/Mortal0110/Yoga14sACH2021_Hackintosh/wiki/完善度及兼容性#geekbench-6比较)
+# [Geekbench 6比较](https://github.com/TychoSuen/Yoga14sACH2021_Hackintosh/wiki/完善度及兼容性#geekbench-6比较)
 
 | 系统          | 项目 | 分数                                                         |
 | ------------- | ---- | ------------------------------------------------------------ |
@@ -64,14 +64,14 @@ Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你
 
 
 
-# [DiskMark比较](https://github.com/Mortal0110/Yoga14sACH2021_Hackintosh/wiki/完善度及兼容性#diskmark比较)
+# [DiskMark比较](https://github.com/TychoSuen/Yoga14sACH2021_Hackintosh/wiki/完善度及兼容性#diskmark比较)
 
 | 系统 | Win 10                                                       | MacOS Ventura                                                |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 分数 | <img src="./assets/AS%20SSD%20Benchmark%20win10.png" alt="AS SSD Benchmark win10" style="zoom:30%;" /> | <img src="./assets/image-20250205222601149.png" alt="image-20250205222601149" style="zoom:35%;" /> |
 | 工具 | AS SSD Benckmark                                             | AmorphousDiskMark                                            |
 
-# [镜像制作以及安装工作](https://github.com/Mortal0110/Yoga14sACH2021_Hackintosh/wiki/黑苹果教程)
+# [镜像制作以及安装工作](https://github.com/TychoSuen/Yoga14sACH2021_Hackintosh/wiki/黑苹果教程)
 
 该项内容建议在网络中搜索进行学习，此项目中该部分并不完善。
 
@@ -80,9 +80,9 @@ Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你
 > - [EFI各文件介绍1](https://yuexiang.fun/1231.html)
 > - [EFI各文件介绍2](https://blog.xjn819.com/post/opencore-guide.html)
 
-# [收尾工作/美化](https://github.com/Mortal0110/Yoga14sACH2021_Hackintosh/wiki/黑苹果教程#收尾工作)
+# [收尾工作/美化](https://github.com/TychoSuen/Yoga14sACH2021_Hackintosh/wiki/黑苹果教程#收尾工作)
 
-## [黑成白苹果](https://github.com/Mortal0110/Yoga14sACH2021_Hackintosh/wiki/黑苹果教程#黑成白苹果)
+## [黑成白苹果](https://github.com/TychoSuen/Yoga14sACH2021_Hackintosh/wiki/黑苹果教程#黑成白苹果)
 
 我们通过使用bootcamp达成不通过使用oc界面在win与mac之间进行切换。
 
@@ -94,7 +94,7 @@ Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你
 
 > exFAT格式下的文件Windows和Mac都可读可写，如果有U盘经常在双系统下使用建议也格式化为exFAT格式。
 
-## [使用部分联想管家功能](https://github.com/Mortal0110/Yoga14sACH2021_Hackintosh/wiki/黑苹果教程#使用部分联想管家功能)
+## [使用部分联想管家功能](https://github.com/TychoSuen/Yoga14sACH2021_Hackintosh/wiki/黑苹果教程#使用部分联想管家功能)
 
 ### 生效功能
 
