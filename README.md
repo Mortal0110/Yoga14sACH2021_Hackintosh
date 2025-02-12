@@ -80,9 +80,9 @@ Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你
 > - [EFI各文件介绍1](https://yuexiang.fun/1231.html)
 > - [EFI各文件介绍2](https://blog.xjn819.com/post/opencore-guide.html)
 
-# [收尾工作/美化](https://github.com/TychoSuen/Yoga14sACH2021_Hackintosh/wiki/黑苹果教程#收尾工作)
+# [收尾工作/美化](https://github.com/TychoSuen/Yoga14sACH2021_Hackintosh/wiki/黑苹果教程#完善以及美化工作)
 
-## [黑成白苹果](https://github.com/TychoSuen/Yoga14sACH2021_Hackintosh/wiki/黑苹果教程#黑成白苹果)
+## [黑成白苹果](https://github.com/TychoSuen/Yoga14sACH2021_Hackintosh/wiki/完善以及美化工作#黑成白苹果)
 
 我们通过使用bootcamp达成不通过使用oc界面在win与mac之间进行切换。
 
@@ -94,7 +94,7 @@ Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你
 
 > exFAT格式下的文件Windows和Mac都可读可写，如果有U盘经常在双系统下使用建议也格式化为exFAT格式。
 
-## [使用部分联想管家功能](https://github.com/TychoSuen/Yoga14sACH2021_Hackintosh/wiki/黑苹果教程#使用部分联想管家功能)
+## [使用部分联想管家功能](https://github.com/TychoSuen/Yoga14sACH2021_Hackintosh/wiki/完善以及美化工作#使用部分联想管家功能)
 
 ### 生效功能
 
@@ -110,6 +110,14 @@ Step-by-Step Guide on How to Install macOS on Yoga 14s ACH2021（手把手教你
 
 - ~~可能会导致`系统设置-键盘-键盘快捷键-修饰键`不能进行自定义~~
 - ~~在Windows下切换性能模式可能会导致重启到Mac时Pane不能切换性能模式~~
+
+## Apple ID设置中机型图标不显示
+
+方法1：退出Apple ID重启电脑再登陆Apple ID
+
+方法2：重新[更改三码](https://github.com/TychoSuen/Yoga14sACH2021_Hackintosh/wiki/完善以及美化工作#更改三码)即可
+
+
 
  # 参考文档
 
